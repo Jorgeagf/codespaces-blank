@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grouping CSS selectors</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color:rgb(214, 50, 255);
+                font-size: 17px;
+            }  
+
+            h1 {
+            font-family: cursive;
+            color: rgb(0, 238, 255);
+            text-align:center
+             } 
+            
+            h2 {
+                color: rgb(0, 238, 255);
+                font-family: cursive;
+                text-decoration: none;
+            }
+            .imagen {
+                background: rgb(219, 235, 255);
+                float: right;
+                border: 10px ridge rgb(255, 183, 0);
+                width: 500px;
+            }
+
+            .imagendos {
+                background: rgb(219, 235, 255);
+                border: 10px groove rgb(204, 204, 204);
+                width: 300px;
+            }
+
+            h3 {
+                color: rgb(8, 32, 247);
+                font-style: normal;
+            }
+            .orange {
+                background-color: orange;
+            }
+            
+            .yellow {
+                background-color: yellow;
+            }
+            
+            .purple {
+                background-color: rgb(39, 13, 156);
+                color: white;
+            }
+            .bigger { 
+            font-size: 2em;
+            padding-bottom: 6px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1><center>Minería de datos</center></h1>
+        <h2 class="indice">ÍNDICE</h2>
+        <ul><li><a href="#primera">DEFINICIÓN</a></li></ul>
+        <ul><li><a href="#segunda">PROCESO</a></li></ul>
+        <ul><li><a href="#tercera">CÓMO CONVERTIRSE EN UN MINERO DE DATOS</a></li></ul>
+        <ul><li><a href="#cuarta">EJEMPLOS DE APLICACIONES DE LA MINERÍA DE DATOS</a></li></ul>
+        <ul><li><a href="#quinta">DIFERENCIAS ENTRE MINADO DE DATOS Y BIG DATA</a></li></ul>
+        <ul><li><a href="#sexta">DATA MINING: UNA PROFESIÓN DE FUTURO</a></li></ul>
+        <ul><li><a href="#séptima">EMPRESAS ESPAÑOLAS MAS FAMOSAS</a></li></ul>
+
+
+        <h2 id="primera">DEFINICIÓN:</h2>
+        <p>La minería de datos o exploración de datos es <strong>un campo de la estadística y las ciencias de la computación referido al proceso que intenta descubrir patrones<br>
+            en grandes volúmenes de conjuntos de datos.</strong> Utiliza los métodos de la inteligencia artificial, aprendizaje automático, estadística y sistemas de bases de datos.</p>
+            <img class="imagen" src="data:image/jpeg;base64,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">
+        <p> El objetivo general del proceso de minería de datos consiste en <strong>extraer información de un conjunto de datos y transformarla</strong><br>
+            en una estructura comprensible para su uso posterior. Además de la etapa de análisis en bruto, supone aspectos de <br>
+        <strong>gestión de datos y de bases de datos</strong>, de procesamiento de datos del modelo y de las consideraciones de inferencia.</p>
+            
+        <h2 id="segunda">PROCESO: </h2>
+        <ol>
+            <li>
+                <a>
+                    <strong class="purple">  Selección del conjunto de datos. </strong>
+                </a>
+            </li>
+            <li>
+                <a> <strong class="purple">Análisis de las propiedades de los datos.</strong></a>
+            </li>
+            <li>
+                <a><strong class="orange">Transformación del conjunto de datos de entrada.</strong></a>
+            </li>
+            <li>
+                <a><strong class="orange">Selección y aplicación de la técnica de minería de datos.</strong></a>
+            </li>
+            <li>
+                <a><strong class="yellow">Extracción de conocimiento.      </strong></a>
+            </li>
+            <li>
+                 <a><strong class="yellow">Interpretación y evaluación de datos.</strong></a>
+            </li>       
+        </ol>
+        <h2 id="tercera">CÓMO CONVERTIRSE EN UN MINERO DE DATOS:</h2>
+        <p>Para ser un minero de datos, hay que saber convertir datos en activos de valor. En este sentido, <br>
+                las nuevas técnicas de <em class="bigger">Big Data son fundamentales</em> porque permiten una gestión masiva de datos eficiente.</p>
+        <img class="imagendos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEvvue1OhA9RkqzX4IfUsj1SmzVIiTTlpwJw&usqp=CAU">
+        <h2 id="cuarta">EJEMPLOS DE APLICACIONES DE LA MINERÍA DE DATOS:</h2>
+        <p>La capacidad predictiva del data mining ha cambiado el diseño de las estrategias empresariales. Ahora se puede entender el presente<br>
+             para anticiparse al futuro. Estos son algunos ejemplos de data mining en la industria actual: </p>
+        <ul>
+            <li><strong class="purple">Marketing</strong>
+            <li><strong class="orange">Comercio minorista </strong>
+            <li><strong class="yellow">Banca</strong>
+            <li><strong class="orange">Medicina</strong>
+            <li><strong class="purple">Televisión y radio </strong>
+        </ul>
+        <img  class="imagen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLnGBGpV4-znCaxEGC_urCroubqeAC2SV0Q&usqp=CAU">
+        <h2 id="quinta">DIFERENCIAS ENTRE MINADO DE DATOS Y BIG DATA:</h2>
+        <div>
+        <p>Por un lado, el Big Data es una tecnología que tiene la <em class="bigger">capacidad de capturar, gestionar y procesar</em> de forma veraz todo tipo de datos,<br>
+             utilizando herramientas o softwares que identifican patrones comunes. </p>
+        <p>A diferencia del Big Data, cuando hablamos de Data Mining nos referimos al análisis de los grandes datos o Big Data<br>
+             para buscar y obtener una información concreta, y así, poder ofrecer resultados que sirvan como solución para optimizar las actividades de una empresa. </p>
+        </div>
+        <h2 id="sexta">DATA MINING: UNA PROFESIÓN DE FUTURO</h2>
+        <p>Hoy en día, la búsqueda, el análisis y la gestión de datos representan un mercado de grandes oportunidades laborales.<br>
+             El profesional de data mining trabaja las bases de datos para evaluar la información y descartar la que no sea útil o confiable. <br>
+            Para ello, debe contar con conocimientos sobre big data, informática y análisis de información, y ser capaz de manejar diferentes tipos de software.</p>
+        <h2 id="séptima">EMPRESAS ESPAÑOLAS MAS FAMOSAS:</h2>
+        <h3>CARTO</h3>
+        <p>Seguramente el principal caso de éxito entre las empresas de Big Data españolas. Anteriormente conocida como CartoDB, <br>
+            Carto es -a día de hoy- una plataforma SaaS de computación en la nube. Su tecnología permite filtrar y analizar cientos de millones de datos<br>
+             y proporcionar unos análisis procesables, útiles en la toma de decisiones en tiempo real por parte de sus clientes. </p>
+        <h3>DATMEAN</h3>
+        <p>Esta empresa con sede madrileña recolecta, día tras día, <em class="bigger">millones de datos de clientes</em> en línea a tiempo real.  <br>
+            En su propia web hablan de que su misión es la de permitir a los anunciantes hacer un mejor uso de los datos disponibles, al comprender realmente <br>
+            bien el comportamiento de sus usuarios. </p>
+            <img class="imagendos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0YVIr_XRGPtqtIXUgsZ3C0pdzhzJeDxU3g&usqp=CAU">
+    </body>
+</html>
